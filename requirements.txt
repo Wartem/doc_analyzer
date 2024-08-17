@@ -1,0 +1,4 @@
+pdfplumber
+requests
+flask-openai
+python-docx
