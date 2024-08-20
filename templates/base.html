@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Wartem's Project Hub{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    {% block extra_head %}{% endblock %}
+    
+    <style>
+                body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #646363a2;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 5px;
+            color: rgb(114, 111, 111);
+        }
+        header {
+            background: #323f47;
+            color: #ffffff;
+            padding-top: 10px;
+            min-height: 30px;
+            border-bottom: #3c79eb 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .highlight, header .current a {
+            color: #3c79eb;
+            font-weight: bold;
+        }
+        #main {
+            flex: 1;
+            padding: 30px 0;
+            background: #ffffff;
+        }
+        footer {
+            padding-top: 20px;
+            color: #ffffff;
+            background-color: #323f47;
+            text-align: center;
+            margin-top: auto;
+        }
+        #headtext {
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+    </style>
+    
+    {% block extra_css %}{% endblock %} 
+</head>
+<body>
+    <header>
+        <div class="container" id="head-text">
+            <div id="branding">
+                <h1>Wartem's <span class="highlight">Project Hub</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="{{ url_for(project_name + '.index') }}">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Wartem. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
