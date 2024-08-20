@@ -1,10 +1,10 @@
+![OpenAI API](https://img.shields.io/badge/API-OpenAI-brightgreen.svg)
+![LM Studio](https://img.shields.io/badge/AI-LM%20Studio-blueviolet.svg)
 ![Python](https://img.shields.io/badge/language-Python-blue.svg)
 ![HTML](https://img.shields.io/badge/language-HTML-orange.svg)
 ![CSS](https://img.shields.io/badge/language-CSS-green.svg)
 ![Flask](https://img.shields.io/badge/framework-Flask-lightgrey.svg)
 ![Jinja](https://img.shields.io/badge/template%20engine-Jinja-yellow.svg)
-![OpenAI API](https://img.shields.io/badge/API-OpenAI-brightgreen.svg)
-![LM Studio](https://img.shields.io/badge/AI-LM%20Studio-blueviolet.svg)
 ![RESTful](https://img.shields.io/badge/API-RESTful-ff69b4.svg)
 ![JSON](https://img.shields.io/badge/data-JSON-lightblue.svg)
 ![Markdown](https://img.shields.io/badge/docs-Markdown-lightgrey.svg)
@@ -19,7 +19,6 @@
   - [Installation](#installation)
 - [Usage](#usage)
 - [Integration with Project Hub](#integration-with-project-hub)
-- [Configuration](#configuration)
 - [Deployment](#deployment)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -87,28 +86,7 @@ Doc Analyzer can be integrated with Project Hub using symbolic links:
    ln -s /path/to/doc-analyzer /path/to/project-hub/projects/doc-analyzer
 
 3. Update Project Hub's configuration to include Doc Analyzer.
-
 Refer to Project Hub documentation for more detailed integration instructions.
-
-## Configuration
-
-Configuration options can be set in `config.py`. Key options include:
-
-    "UPLOAD_FOLDER": "uploads",
-    "ALLOWED_EXTENSIONS": ["txt", "pdf", "png", "jpg", "jpeg", "gif"],
-    "project_name": "doc_analyzer",
-    "display_name": "Document Analyzer",
-    "max_tokens": 12000,
-
-## Deployment
-
-For production deployment:
-
-1. Set `DEBUG = False` in `config.py`.
-2. Use a production WSGI server like Gunicorn:
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
-
-Set up a reverse proxy (e.g., Nginx) for improved security and performance.
 
 ## Acknowledgements
 This project was developed with the significant assistance of Perplexity AI (https://www.perplexity.ai), an innovative AI tool that greatly facilitated the research and development process. Perplexity AI provided invaluable guidance on project structure, coding practices, and documentation. It helped streamline the gathering of information and offered crucial insights into the structure and functionality of the application.
