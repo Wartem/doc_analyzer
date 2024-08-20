@@ -3,6 +3,11 @@
 ![CSS](https://img.shields.io/badge/language-CSS-green.svg)
 ![Flask](https://img.shields.io/badge/framework-Flask-lightgrey.svg)
 ![Jinja](https://img.shields.io/badge/template%20engine-Jinja-yellow.svg)
+![OpenAI API](https://img.shields.io/badge/API-OpenAI-brightgreen.svg)
+![LM Studio](https://img.shields.io/badge/AI-LM%20Studio-blueviolet.svg)
+![RESTful](https://img.shields.io/badge/API-RESTful-ff69b4.svg)
+![JSON](https://img.shields.io/badge/data-JSON-lightblue.svg)
+![Markdown](https://img.shields.io/badge/docs-Markdown-lightgrey.svg)
 
 # Doc Analyzer
 
