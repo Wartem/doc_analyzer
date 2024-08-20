@@ -110,8 +110,8 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 
 Set up a reverse proxy (e.g., Nginx) for improved security and performance.
 
-## License
-This project is licensed under the MIT License
-
 ## Acknowledgements
 This project was developed with the significant assistance of Perplexity AI (https://www.perplexity.ai), an innovative AI tool that greatly facilitated the research and development process. Perplexity AI provided invaluable guidance on project structure, coding practices, and documentation. It helped streamline the gathering of information and offered crucial insights into the structure and functionality of the application.
+
+## License
+This project is licensed under the MIT License
