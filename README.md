@@ -10,6 +10,7 @@
 ![Markdown](https://img.shields.io/badge/docs-Markdown-lightgrey.svg)
 
 # Doc Analyzer
+![Skärmbild 2024-08-21 105257](https://github.com/user-attachments/assets/a74da3e9-5cee-4f16-8bcd-8249ad87b673)
 
 ## Table of Contents
 - [Overview](#overview)
