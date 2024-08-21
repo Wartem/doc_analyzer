@@ -5,7 +5,7 @@ import json
 from flask import Blueprint, render_template, redirect, url_for, current_app, request, flash
 from .config import project_name, display_name
 
-print("Python path in routes.py:", sys.path)
+# print("Python path in routes.py:", sys.path)
 
 # Dynamic imports
 def import_module(module_name):

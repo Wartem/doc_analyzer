@@ -9,11 +9,14 @@ config_path = os.path.join(current_dir, 'project_config.json')
 
 # Default configuration
 default_config = {
-    "UPLOAD_FOLDER": "uploads",
-    "ALLOWED_EXTENSIONS": ["txt", "pdf", "png", "jpg", "jpeg", "gif"],
     "project_name": "doc_analyzer",
     "display_name": "Document Analyzer",
+    "UPLOAD_FOLDER": "uploads",
+    "ALLOWED_EXTENSIONS": ["txt", "pdf", "png", "jpg", "jpeg", "gif"],
     "max_tokens": 12000,
+    "debug": True,
+    "port": 5600,
+    "secret_key": "default_secret_key_replace_me_in_production"
 }
 
 # Try to load the configuration file, use defaults if not found
