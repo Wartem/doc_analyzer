@@ -78,16 +78,16 @@ The application should now be running on `http://localhost:5000`.
 4. Select the analysis parameters and click "Analyze".
 5. View the analysis results on the results page.
 
-## Integration with Project Hub
+## Integration with [Project Hub](https://github.com/Wartem/wartem_project_hub)
 
-Doc Analyzer can be integrated with Project Hub using symbolic links:
+Doc Analyzer can be integrated with [Project Hub](https://github.com/Wartem/wartem_project_hub) using symbolic links:
 
 1. Clone Doc Analyzer into a separate directory.
-2. Create a symbolic link in the Project Hub's project folder:
+2. Create a symbolic link in the [Project Hub's](https://github.com/Wartem/wartem_project_hub) project folder:
    ln -s /path/to/doc-analyzer /path/to/project-hub/projects/doc-analyzer
 
-3. Update Project Hub's configuration to include Doc Analyzer.
-Refer to Project Hub documentation for more detailed integration instructions.
+3. Update [Project Hub's](https://github.com/Wartem/wartem_project_hub) configuration to include Doc Analyzer.
+Refer to [Project Hub](https://github.com/Wartem/wartem_project_hub) documentation for more detailed integration instructions.
 
 ## Acknowledgements
 This project was developed with the significant assistance of Perplexity AI (https://www.perplexity.ai), an innovative AI tool that greatly facilitated the research and development process. Perplexity AI provided invaluable guidance on project structure, coding practices, and documentation. It helped streamline the gathering of information and offered crucial insights into the structure and functionality of the application.
