@@ -54,7 +54,8 @@ Originally developed as part of the Project Hub ecosystem, Doc Analyzer has been
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/Wartem/doc-analyzer.git
+git clone https://github.com/Wartem/doc_analyzer.git
+cd doc_analyzer
 
 python -m venv .venv
 source venv/bin/activate # On Windows use venv\Scripts\activate
